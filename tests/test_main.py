@@ -4,7 +4,7 @@ import subprocess
 class TestMultiplicativePersistence(unittest.TestCase):
     def run_script_with_input(self, user_input):
         result = subprocess.run(
-            ['python3', 'main.py'],
+            ['python', 'main.py'],
             input=user_input,
             text=True,
             capture_output=True
